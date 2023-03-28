@@ -9,60 +9,68 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="https://cdn0.iconfinder.com/data/icons/apple-apps/100/Apple_Stock-512.png">
 
     <style>
-        .left{
+        .left {
             width: 401px;
             float: left;
             border: 3px solid #191c1e;
-            display: flex; 
+            display: flex;
             height: 865px;
-               }
-        .right{
-            float:right;
+        }
+
+        .right {
+            float: right;
             border: 3px solid #191c1e;
             width: 1502px;
             height: 865px;
 
         }
+
         @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Orbitron:wght@500&family=Space+Mono&display=swap');
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-body{
-    display: block;
-    /* background: #000033; */
-    background: #ebeded;
-    font-family: 'Merriweather', serif;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Orbitron', sans-serif;
-font-family: 'Space Mono', monospace;
-}
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-.navbar{
-    align-items: center;
-    display: flex;
-    font-size: 2rem;
-    justify-content: space-between;
-    margin: 0 auto;
-    max-width: 120rem;
-    padding: 2rem 2rem;
-    /* background: #000066; */
-    background: #191c1e;
-    color: #f3f2f4;
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+        body {
+            display: block;
+            /* background: #000033; */
+            background: #ebeded;
+            font-family: 'Merriweather', serif;
+            font-family: 'Montserrat', sans-serif;
+            font-family: 'Orbitron', sans-serif;
+            font-family: 'Space Mono', monospace;
+        }
 
-}
-.navbar p{
-    margin-left: 1.5rem;
-    
-}
- canvas {
+        .navbar {
+            align-items: center;
+            display: flex;
+            font-size: 2rem;
+            justify-content: space-between;
+            margin: 0 auto;
+            max-width: 120rem;
+            padding: 2rem 2rem;
+            /* background: #000066; */
+            background: #191c1e;
+            color: #f3f2f4;
+            box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+
+        }
+
+        .navbar p {
+            margin-left: 1.5rem;
+
+        }
+
+        canvas {
             width: 100%;
             height: 80vh;
+            
         }
 
         /* Define styles for dark mode */
@@ -90,167 +98,230 @@ font-family: 'Space Mono', monospace;
         #ticker-list li:hover {
             text-decoration: underline;
         }
-.navbar ul{
-    display: flex;
-    gap: 4rem;
-    list-style: none;
-    padding-left: 15rem;
-    font-size: 1.5rem;
-}
-.navbar li{
-    display: list-item;
-}
 
-.mid-head{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 3rem;
-    font-size: 30px;
-    color: #f3f2f4;
-}
+        .navbar ul {
+            display: flex;
+            gap: 4rem;
+            list-style: none;
+            padding-left: 15rem;
+            font-size: 1.5rem;
+        }
 
-nav a{
-    color: white;
-    text-decoration: none;
-    
-}
+        .navbar li {
+            display: list-item;
+        }
 
-.search-bar{
-    width:100%;
-    display: flex;
-    margin-left: 45rem;
-    position: fixed;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 60px;
-    max-width: 400px;
-    padding: 10px 10px;
+        .mid-head {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 3rem;
+            font-size: 30px;
+            color: #f3f2f4;
+        }
 
-}
-.search-bar input{
-    background: transparent;
-    flex: 1;
-    border: 0;
-    outline: none;
-    font-size: 20px;
-    margin-left: 1rem;
-    color: white;
-}
-::placeholder{
-    color: white;
-}
+        nav a {
+            color: white;
+            text-decoration: none;
 
-.search-bar button{
-    border: 0;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-}
-navbar a:hover{
-    color: white;
-}
+        }
 
-a:link { COLOR: white; TEXT-DECORATION: none; font-weight: normal }
-a:visited { COLOR: white; TEXT-DECORATION: none; font-weight: normal }
-a:active { COLOR: white; TEXT-DECORATION: none }
-a:hover { COLOR: #999e7b; TEXT-DECORATION: none; font-weight: none }
+        .search-bar {
+            width: 100%;
+            display: flex;
+            margin-left: 45rem;
+            position: fixed;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 60px;
+            max-width: 400px;
+            padding: 10px 10px;
 
-.content {
-    padding: 16px;
-  }
+        }
 
-.sticky{
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
+        .search-bar input {
+            background: transparent;
+            flex: 1;
+            border: 0;
+            outline: none;
+            font-size: 20px;
+            margin-left: 1rem;
+            color: white;
+        }
 
-.sticky + .content {
-    padding-top: 60px;
-  }
+        ::placeholder {
+            color: white;
+        }
 
-.frame-left{
-    display: flex;
-}
+        .search-bar button {
+            border: 0;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+        }
 
+        navbar a:hover {
+            color: white;
+        }
 
-div{
-    display: block;
-}
+        a:link {
+            COLOR: white;
+            TEXT-DECORATION: none;
+            font-weight: normal
+        }
 
-/* .nifty{
-    display: flex;
-    justify-content: space-between;
-    padding: 2rem 2rem;
-    flex-wrap: wrap;
-    position: relative;
-} */
-.nifty p{
-    color: white;
-}
+        a:visited {
+            COLOR: white;
+            TEXT-DECORATION: none;
+            font-weight: normal
+        }
 
-.left-list h1{
-    font-size: 30px;
-    margin-top: 1rem;
-    margin-left: 2rem;
-}
+        a:active {
+            COLOR: white;
+            TEXT-DECORATION: none
+        }
 
-.table-css{
-    border: 2px solid black;
-    margin-left: 7rem;
-    margin-top: 3rem;
-    border-radius: 50%;
-    cursor: pointer;
-    background: rgba(255, 255, 255, 0.2);
-}
-.table-css td{
-    padding: 10px;
-    background: transparent;
-}
+        a:hover {
+            COLOR: #999e7b;
+            TEXT-DECORATION: none;
+            font-weight: none
+        }
+
+        .content {
+            padding: 16px;
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        .sticky+.content {
+            padding-top: 60px;
+        }
+
+        .frame-left {
+            display: flex;
+        }
 
 
+        div {
+            display: block;
+        }
+        .nifty p {
+            color: white;
+        }
 
+        .left-list h1 {
+            font-size: 30px;
+            margin-top: 1rem;
+            margin-left: 2rem;
+        }
+
+        .table-css {
+            /* border: 2px solid black; */
+            margin-left: 7rem;
+            margin-top: 3rem;
+            /* border-radius: 50%; */
+            cursor: pointer;
+            /* background: rgba(255, 255, 255, 0.2); */
+        }
+
+        .table-css td {
+            padding: 10px;
+            align-content: center;
+            background: transparent;
+        }
+
+        .btn {
+            border: none;
+            background-color: inherit;
+            padding: 14px 28px;
+            font-size: 16px;
+            cursor: pointer;
+            
+            display: inline-block;
+        }
+
+        /* On mouse-over */
+        .btn:hover {
+            background: #eee;
+        }
+        .success {color: green;}
+        img{
+            width: 100px;
+            height:40px;
+        }
     </style>
 
-  
+
 </head>
 
 <body>
     <div class="root">
         <nav class>
             <div class="navbar">
+                
                 <a href="#">
-                    <p>STOCK MARKET TRACKER</p>
+                    
+                    <!-- <img src="/static/pngwing.com (1) (1).png"> -->
+                    <p style="display: inline-block;">Stock Tracker</p>
                 </a>
 
                 <form action="" class="search-bar">
                     <input type="text" placeholder="search stocks" id="search">
-                    <button type="button" onclick="getChartData()" ><i class="fa fa-search"></i></button>
+                    <button type="button" onclick="getChartData()"><i class="fa fa-search"></i></button>
                 </form>
 
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Market</a></li>
-                    <li><a href="#">Choose Us</a></li>
-                    <li><a href="#">Join</a></li>
+                    <li><a href="#">Learn</a></li>
+                    <!-- <li><a href="#">Join</a></li> -->
+                    <li><a target="_blank" href="https://github.com/deepraj21" class="fa fa-github"></a></li>
                 </ul>
             </div>
         </nav>
     </div>
-    <!-- <div class="nifty">
-        <p>NIFTY 50</p>
-        <p>NIFTY NEXT 50</p>
-        <p>NIFTY MIDCAP SELECT</p>
-        <p>NIFTY BANK</p>
-        <p>NIFTY FINANCIAL SERVICES</p>
-    </div> -->
     <div class="left">
         <div class="left-list">
             <h1>TOP STOCKS IN INDIA</h1>
             <table class="table-css">
+               
+                
                 <tr>
-                    <td >RELIANCE IND.</td>
+                    <td><button class="btn success" onclick="getTickerChart('RELI')">RELIANCE IND</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn success" onclick="getTickerChart('tcs')">TCS</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn success" onclick="getTickerChart('HDFCBANK')">HDFC BANK</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn success" onclick="getTickerChart('ICICIBANK')">ICICI BANK</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn success" onclick="getTickerChart('HINDUNILVR')">HUL</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn success" onclick="getTickerChart('INFY')">INFOSYS</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn success" onclick="getTickerChart('HDFC')">HDFC</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn success" onclick="getTickerChart('ITC')">ITC</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn success" onclick="getTickerChart('SBIN')">SBI</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn success" onclick="getTickerChart('BHARTIARTL')">BHARTI AIRTEL</button></td>
+                </tr>
+                <tr>
+                    <td><button id="dark-mode-toggle" type="button">Dark Mode</button></td>
                 </tr>
             </table>
         </div>
@@ -259,121 +330,114 @@ div{
         <div>
             <canvas id="chart-canvas"></canvas>
         </div>
-        <button id="dark-mode-toggle" type="button">Dark Mode</button>
-        <ul id="ticker-list">
-            <li onclick="getTickerChart('AAPL')">AAPL</li>
-            <li onclick="getTickerChart('GOOGL')">GOOGL</li>
-            <li onclick="getTickerChart('AMZN')">AMZN</li>
-            <li onclick="getTickerChart('MSFT')">MSFT</li>
-        </ul>
     </div>
-        <script>
-            function getChartData() {
-                var symbol = document.getElementById('search').value;
-                fetch(`/stock_chart?symbol=${symbol}`)
-                    .then(response => response.json())
-                    .then(data => {
-                        var ctx = document.getElementById('chart-canvas').getContext('2d');
-                        var chart = new Chart(ctx, {
-                            type: 'line',
-                            data: {
-                                labels: data.x,
-                                datasets: [{
-                                    label: symbol,
-                                    data: data.y,
-                                    backgroundColor: 'rgba(255, 99, 132, 0.2)',
-                                    borderColor: 'rgba(255, 99, 132, 1)',
-                                    borderWidth: 1
+    <script>
+        function getChartData() {
+            var symbol = document.getElementById('search').value;
+            fetch(`/stock_chart?symbol=${symbol}`)
+                .then(response => response.json())
+                .then(data => {
+                    var ctx = document.getElementById('chart-canvas').getContext('2d');
+                    var chart = new Chart(ctx, {
+                        type: 'line',
+                        data: {
+                            labels: data.x,
+                            datasets: [{
+                                label: symbol,
+                                data: data.y,
+                                backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                                borderColor: 'rgba(255, 99, 132, 1)',
+                                borderWidth: 1
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            scales: {
+                                xAxes: [{
+                                    type: 'time',
+                                    time: {
+                                        unit: 'day'
+                                    },
+                                    ticks: {
+                                        maxRotation: 0
+                                    }
+                                }],
+                                yAxes: [{
+                                    ticks: {
+                                        beginAtZero: false
+                                    }
                                 }]
                             },
-                            options: {
-                                responsive: true,
-                                maintainAspectRatio: false,
-                                scales: {
-                                    xAxes: [{
-                                        type: 'time',
-                                        time: {
-                                            unit: 'day'
-                                        },
-                                        ticks: {
-                                            maxRotation: 0
-                                        }
-                                    }],
-                                    yAxes: [{
-                                        ticks: {
-                                            beginAtZero: false
-                                        }
-                                    }]
-                                },
-                                tooltips: {
-                                    mode: 'index',
-                                    intersect: false,
-                                    callbacks: {
-                                        label: function (tooltipItem, data) {
-                                            return data.datasets[tooltipItem.datasetIndex].label + ': ' + tooltipItem.yLabel;
-                                        }
+                            tooltips: {
+                                mode: 'index',
+                                intersect: false,
+                                callbacks: {
+                                    label: function (tooltipItem, data) {
+                                        return data.datasets[tooltipItem.datasetIndex].label + ': ' + tooltipItem.yLabel;
                                     }
                                 }
                             }
-                        });
+                        }
                     });
-            }
+                });
+        }
 
-            function getTickerChart(ticker) {
-                fetch(`/stock_chart?symbol=${ticker}`)
-                    .then(response => response.json())
-                    .then(data => {
-                        var ctx = document.getElementById('chart-canvas').getContext('2d');
-                        var chart = new Chart(ctx, {
-                            type: 'line',
-                            data: {
-                                labels: data.x,
-                                datasets: [{
-                                    label: ticker,
-                                    data: data.y,
-                                    backgroundColor: 'rgba(255, 99, 132, 0.2)',
-                                    borderColor: 'rgba(255, 99, 132, 1)',
-                                    borderWidth: 1
+        function getTickerChart(ticker) {
+            fetch(`/stock_chart?symbol=${ticker}`)
+                .then(response => response.json())
+                .then(data => {
+                    var ctx = document.getElementById('chart-canvas').getContext('2d');
+                    var chart = new Chart(ctx, {
+                        type: 'line',
+                        data: {
+                            labels: data.x,
+                            datasets: [{
+                                label: ticker,
+                                data: data.y,
+                                backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                                borderColor: 'rgba(255, 99, 132, 1)',
+                                borderWidth: 1
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            scales: {
+                                xAxes: [{
+                                    type: 'time',
+                                    time: {
+                                        unit: 'day'
+                                    },
+                                    ticks: {
+                                        maxRotation: 0
+                                    }
+                                }],
+                                yAxes: [{
+                                    ticks: {
+                                        beginAtZero: false
+                                    }
                                 }]
                             },
-                            options: {
-                                responsive: true,
-                                maintainAspectRatio: false,
-                                scales: {
-                                    xAxes: [{
-                                        type: 'time',
-                                        time: {
-                                            unit: 'day'
-                                        },
-                                        ticks: {
-                                            maxRotation: 0
-                                        }
-                                    }],
-                                    yAxes: [{
-                                        ticks: {
-                                            beginAtZero: false
-                                        }
-                                    }]
-                                },
-                                tooltips: {
-                                    mode: 'index',
-                                    intersect: false,
-                                    callbacks: {
-                                        label: function (tooltipItem, data) {
-                                            return data.datasets[tooltipItem.datasetIndex].label + ': ' + tooltipItem.yLabel;
-                                        }
+                            tooltips: {
+                                mode: 'index',
+                                intersect: false,
+                                callbacks: {
+                                    label: function (tooltipItem, data) {
+                                        return data.datasets[tooltipItem.datasetIndex].label + ': ' + tooltipItem.yLabel;
                                     }
                                 }
                             }
-                        });
+                        }
                     });
-            }
+                });
+        }
 
-            var darkModeButton = document.getElementById('dark-mode-toggle');
-            darkModeButton.addEventListener('click', function () {
-                document.body.classList.toggle('dark-mode');
-            });
-        </script>
+        var darkModeButton = document.getElementById('dark-mode-toggle');
+        darkModeButton.addEventListener('click', function () {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
 
 
 </body>
