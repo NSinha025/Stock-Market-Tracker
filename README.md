@@ -1,1 +1,1 @@
-# Stock-Market-Tracker
+<img src="template.png"/>
