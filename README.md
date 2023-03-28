@@ -1,1 +1,1 @@
-<a href="/template.png"/>
+<img src="template.png"/>
